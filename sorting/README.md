@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-This folder contains Python implementations of classic sorting algorithms. These are fundamental in both theoretical computer science and real-world applications, helping build a solid understanding of algorithmic efficiency, comparisons, and data manipulation.
+This folder contains Python implementations of six classic sorting algorithms. Each script is interactive and grounded in a real-world analogy, complete with performance tracking and user input for hands-on learning and practical application.
 
 ---
 
@@ -8,75 +8,82 @@ This folder contains Python implementations of classic sorting algorithms. These
 
 ---
 
-### 🔁 Bubble Sort
+### 🔁 Bubble Sort – Student Scores
 
-A simple comparison-based algorithm that repeatedly swaps adjacent elements if they are in the wrong order. It's not the most efficient, but great for understanding basic algorithm mechanics.
+Sorts a list of students by their test scores using a simple comparison-based approach.
 
 **File:** `bubble_sort.py`  
-**Concepts:** Adjacent comparison, nested loops  
-**Time Complexity:** O(n²)  
-**Use Case:** Educational and small datasets
+**Concepts:** Adjacent comparison, tuple-based sorting  
+**Input:** Student names and scores  
+**Output:** Sorted list of students by score  
+**Bonus:** Measures execution time using `time` module
 
 ---
 
-### ⚡ Merge Sort
+### ⚡ Merge Sort – Random Integer List
 
-A divide-and-conquer algorithm that splits arrays into halves, recursively sorts them, and then merges the results into a single sorted array.
+Uses a divide-and-conquer approach to sort a randomly generated list of integers.
 
 **File:** `merge_sort.py`  
 **Concepts:** Recursion, merging  
-**Time Complexity:** O(n log n)  
-**Use Case:** Efficient and stable sorting of large datasets
+**Input:** Number of elements (generates random integers)  
+**Output:** Sorted array  
+**Bonus:** Confirmation prompt before execution + performance timer
 
 ---
 
-### ✍️ Insertion Sort
+### ✍️ Insertion Sort – Playing Cards
 
-Builds the final sorted array one item at a time. Great for small or partially sorted datasets.
+Simulates how a player might sort cards in their hand, one at a time.
 
 **File:** `insertion_sort.py`  
-**Concepts:** In-place, comparison-based sorting  
-**Time Complexity:** O(n²)  
-**Use Case:** Efficient on small datasets, commonly used in practice where input is almost sorted
+**Concepts:** Shifting elements, in-place insertion  
+**Input:** Space-separated card values (integers)  
+**Output:** Sorted list of cards  
+**Bonus:** Tracks sort time for performance reference
 
 ---
 
-### 🔽 Selection Sort
+### 📚 Selection Sort – Books by Year
 
-Divides the list into a sorted and unsorted part and repeatedly selects the smallest element from the unsorted part.
+Sorts a list of books in ascending order based on their publication year.
 
 **File:** `selection_sort.py`  
-**Concepts:** In-place, comparison, selection  
-**Time Complexity:** O(n²)  
-**Use Case:** Simple to implement but inefficient for large datasets
+**Concepts:** Selection-based swapping, tuple manipulation  
+**Input:** Book titles and years  
+**Output:** Books sorted by publication year  
+**Bonus:** Execution time display
 
 ---
 
-### 🚀 Quick Sort
+### 🚀 Quick Sort – Random Integers
 
-A highly efficient divide-and-conquer sorting algorithm that picks a pivot and partitions the array into elements less than and greater than the pivot.
+A Pythonic recursive implementation that picks the middle element as pivot and sorts a randomly generated list.
 
 **File:** `quick_sort.py`  
-**Concepts:** Recursion, partitioning, pivot logic  
-**Time Complexity:** Average: O(n log n), Worst: O(n²)  
-**Use Case:** Fast, widely used in production environments
+**Concepts:** Partitioning, divide-and-conquer, recursion  
+**Input:** Auto-generated random list  
+**Output:** Sorted list  
+**Bonus:** List comprehension for elegant structure + timing logic
 
 ---
 
-### 🧮 Radix Sort
+### 🧮 Radix Sort – LSD & MSD Implementations
 
-A non-comparison-based sorting algorithm that processes individual digits. Useful for sorting large numbers of integers with fixed length.
+Demonstrates both Least Significant Digit (LSD) and Most Significant Digit (MSD) versions of Radix Sort with random input.
 
 **File:** `radix_sort.py`  
-**Concepts:** Bucketing, digit place sorting  
-**Time Complexity:** O(nk), where *k* is the number of digits  
-**Use Case:** Sorting large sets of integers efficiently
+**Concepts:** Bucket sort, digit-wise processing, recursion (MSD)  
+**Input:** Number of elements (randomly generated integers)  
+**Output:** Two sorted arrays using LSD and MSD  
+**Bonus:** Clear contrast between iterative and recursive strategies
 
 ---
 
-## 💡 Usage
+## 💡 How to Run
 
-To run any sorting algorithm:
+Run any script using:
 
 ```bash
 python filename.py
+
